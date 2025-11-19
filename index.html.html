@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz: Accidente Laboral por Incendio (BINVAC 032)</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 700px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            background-color: #f9f9f9; 
+        }
+        h1 { 
+            color: #d32f2f; 
+            text-align: center; 
+        }
+        .header-img { 
+            width: 100%; 
+            max-height: 300px; 
+            object-fit: cover; 
+            border-radius: 8px; 
+            margin-bottom: 20px; 
+        }
+        .pregunta { 
+            margin-bottom: 25px; 
+            padding: 15px; 
+            background: white; 
+            border-radius: 8px; 
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+        }
+        .question-img { 
+            width: 80px; 
+            height: 60px; 
+            object-fit: cover; 
+            float: right; 
+            margin-left: 15px; 
+            border-radius: 4px; 
+        }
+        label { 
+            display: block; 
+            margin: 5px 0; 
+            cursor: pointer; 
+        }
+        input[type="radio"] { 
+            margin-right: 10px; 
+        }
+        button { 
+            background: #d32f2f; 
+            color: white; 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 4px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            display: block; 
+            margin: 20px auto; 
+        }
+        button:hover { 
+            background: #b71c1c; 
+        }
+        #resultado { 
+            margin-top: 20px; 
+            font-weight: bold; 
+            text-align: center; 
+            padding: 15px; 
+            background: #e3f2fd; 
+            border-radius: 8px; 
+        }
+        @media (max-width: 600px) {
+            .question-img { float: none; margin: 0 0 10px 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Interactivo: Caso de Accidente por Incendio en Obra</h1>
+    <img src="https://www.insst.es/documents/94886/794470/binvac_32_2.jpg/50c87fe5-11b2-485d-8b3b-03b1954de8be?t=1663232609285" alt="Edificio dañado por incendio en obra de construcción" class="header-img">
+    <p>Responde las 5 preguntas sobre el caso BINVAC 032 explicado anteriormente. ¡Al final verás tu puntuación!</p>
+    
+    <div id="quiz">
+        <div class="pregunta">
+            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/WYICAMRZHBGR7C5ALLMBQ7E35U.jpg" alt="Bidón de gasolina inflamable" class="question-img">
+            <h3>1. ¿Qué causó la explosión inicial del bidón de gasolina?</h3>
+            <label><input type="radio" name="q1" value="a"> A) Impacto directo de la maquinaria.</label><br>
+            <label><input type="radio" name="q1" value="b"> B) El bidón era demasiado pesado.</label><br>
+            <label><input type="radio" name="q1" value="c"> C) El trabajador fumaba cerca.</label><br>
+            <label><input type="radio" name="q1" value="d"> D) Emanación de vapores por derrame, ignitada por fuente de calor.</label>
+        </div>
+        
+        <div class="pregunta">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT31_b6ub66EZKWnliPoZAZgPJvKvqbjPMU3w&s" alt="Manipuladora telescópica en obra" class="question-img">
+            <h3>2. ¿Qué maquinaria se usó inadecuadamente para transportar el bidón?</h3>
+            <label><input type="radio" name="q2" value="a"> A) Carretilla manual.</label><br>
+            <label><input type="radio" name="q2" value="b"> B) Remolque fijo.</label><br>
+            <label><input type="radio" name="q2" value="c"> C) Manipuladora telescópica.</label><br>
+            <label><input type="radio" name="q2" value="d"> D) Soporte dedicado para combustibles.</label>
+        </div>
+        
+        <div class="pregunta">
+            <img src="https://noticias.bt2asociados.com/wp-content/uploads/2016/07/45-presentacion_11-seguridad-y-salud.jpg" alt="Reunión de plan de seguridad laboral" class="question-img">
+            <h3>3. ¿Cuál fue la principal deficiencia en el Plan de Seguridad?</h3>
+            <label><input type="radio" name="q3" value="a"> A) No contemplaba sustancias inflamables.</label><br>
+            <label><input type="radio" name="q3" value="b"> B) Falta de extintores.</label><br>
+            <label><input type="radio" name="q3" value="c"> C) Ausencia de primeros auxilios.</label><br>
+            <label><input type="radio" name="q3" value="d"> D) Sin rutas de evacuación.</label>
+        </div>
+        
+        <div class="pregunta">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlt8IJyo_YhJafHWZuzx7R2QUSHE6rjJvqzg&s" alt="Transporte seguro de materiales inflamables" class="question-img">
+            <h3>4. ¿Qué técnica recomendada faltó para el transporte?</h3>
+            <label><input type="radio" name="q4" value="a"> A) Usar maquinaria pesada siempre.</label><br>
+            <label><input type="radio" name="q4" value="b"> B) Emplear carretillas o soportes específicos para líquidos volátiles.</label><br>
+            <label><input type="radio" name="q4" value="c"> C) Transportar más de 20L por vez.</label><br>
+            <label><input type="radio" name="q4" value="d"> D) Ignorar verificaciones de envases.</label>
+        </div>
+        
+        <div class="pregunta">
+            <img src="https://www.carteling.com/8651-large_default/extintor-de-incendios.jpg" alt="Equipo de respuesta a emergencias con extintores" class="question-img">
+            <h3>5. ¿Qué salvó la vida del trabajador?</h3>
+            <label><input type="radio" name="q5" value="a"> A) Respuesta inmediata de compañeros con extintores y auxilios.</label><br>
+            <label><input type="radio" name="q5" value="b"> B) Su EPI ignífugo.</label><br>
+            <label><input type="radio" name="q5" value="c"> C) El bidón no explotó del todo.</label><br>
+            <label><input type="radio" name="q5" value="d"> D) Llamada tardía a emergencias.</label>
+        </div>
+        
+        <button onclick="calcularPuntuacion()">¡Calcular Puntuación!</button>
+    </div>
+    
+    <div id="resultado"></div>
+    
+    <script>
+        function calcularPuntuacion() {
+            let puntuacion = 0;
+            const respuestasCorrectas = { q1: 'd', q2: 'c', q3: 'a', q4: 'b', q5: 'a' };
+            
+            for (let i = 1; i <= 5; i++) {
+                const seleccionada = document.querySelector(`input[name="q${i}"]:checked`);
+                if (seleccionada && seleccionada.value === respuestasCorrectas[`q${i}`]) {
+                    puntuacion++;
+                }
+            }
+            
+            const resultado = document.getElementById('resultado');
+            let mensaje = `¡Puntuación: ${puntuacion}/5! `;
+            if (puntuacion === 5) mensaje += '¡Excelente! Dominas el caso.';
+            else if (puntuacion >= 3) mensaje += '¡Bien! Revisa las técnicas de prevención.';
+            else mensaje += '¡Oportunidad de mejorar! Estudia las causas y recomendaciones.';
+            resultado.innerHTML = `<p>${mensaje}</p><p><a href="#" onclick="location.reload()">Reiniciar Quiz</a></p>`;
+        }
+    </script>
+</body>
+</html>
